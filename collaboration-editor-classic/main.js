@@ -53,15 +53,15 @@ import {
 	RevisionHistory,
 	TrackChanges,
 	TrackChangesData,
-	TrackChangesPreview,
+	TrackChangesPreview
 	// Premium features
-	CaseChange,
-	ExportPdf,
-	ExportWord,
-	ImportWord,
-	MultiLevelList,
-	PasteFromOfficeEnhanced,
-	SlashCommand
+	// CaseChange,
+	// ExportPdf,
+	// ExportWord,
+	// ImportWord,
+	// MultiLevelList,
+	// PasteFromOfficeEnhanced,
+	// SlashCommand
 } from 'ckeditor5-premium-features';
 
 import { UsersInit } from 'ckeditor5-collaboration-samples-integrations';
@@ -90,8 +90,8 @@ ClassicEditor.builtinPlugins = [
 	Autosave,
 	BlockQuote,
 	Bold,
-	CKBox,
-	CKBoxImageEdit,
+	// CKBox,
+	// CKBoxImageEdit,
 	CloudServices,
 	Essentials,
 	FontSize,
@@ -125,22 +125,22 @@ ClassicEditor.builtinPlugins = [
 	Undo,
 
 	Comments,
-	RevisionHistory,
+	// RevisionHistory,
 	TrackChanges,
 	TrackChangesData,
 	TrackChangesPreview,
 
-	CaseChange,
-	ExportPdf,
-	ExportWord,
-	ImportWord,
-	MultiLevelList,
-	PasteFromOfficeEnhanced,
-	SlashCommand,
+	// CaseChange,
+	// ExportPdf,
+	// ExportWord,
+	// ImportWord,
+	// MultiLevelList,
+	// PasteFromOfficeEnhanced,
+	// SlashCommand,
 
 	UsersInit,
 	CommentsIntegration,
-	RevisionHistoryIntegration,
+	// RevisionHistoryIntegration,
 	TrackChangesIntegration
 ];
 
@@ -150,15 +150,15 @@ ClassicEditor.defaultConfig = {
 			'undo',
 			'redo',
 			'|',
-			'revisionHistory',
+			// 'revisionHistory',
 			'trackChanges',
 			'comment',
 			'commentsArchive',
 			'|',
-			'importWord',
-			'exportWord',
-			'exportPdf',
-			'caseChange',
+			// 'importWord',
+			// 'exportWord',
+			// 'exportPdf',
+			// 'caseChange',
 			'|',
 			'heading',
 			'|',
@@ -173,7 +173,7 @@ ClassicEditor.defaultConfig = {
 			'|',
 			'link',
 			'insertImage',
-			'ckbox',
+			// 'ckbox',
 			'mediaEmbed',
 			'insertTable',
 			'highlight',
@@ -183,7 +183,7 @@ ClassicEditor.defaultConfig = {
 			'|',
 			'bulletedList',
 			'numberedList',
-			'multiLevelList',
+			// 'multiLevelList',
 			'|',
 			'fullscreen',
 			'|',
@@ -303,10 +303,10 @@ ClassicEditor.defaultConfig = {
 	table: {
 		contentToolbar: [ 'tableColumn', 'tableRow', 'mergeTableCells', 'tableProperties', 'tableCellProperties' ]
 	},
-	licenseKey: LICENSE_KEY,
-	ckbox: {
-		tokenUrl: CKBOX_TOKEN_URL
-	}
+	licenseKey: LICENSE_KEY
+	// ckbox: {
+	// 	tokenUrl: CKBOX_TOKEN_URL
+	// }
 };
 
 export { ClassicEditor, EditorWatchdog, CKBoxApp as CKBox };

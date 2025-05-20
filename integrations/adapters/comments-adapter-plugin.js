@@ -19,6 +19,8 @@ export class CommentsIntegration extends Plugin {
 		const usersPlugin = this.editor.plugins.get( 'Users' );
 		const commentsRepositoryPlugin = this.editor.plugins.get( 'CommentsRepository' );
 
+
+
 		// Set the adapter to the `Comments#adapter` property.
 		commentsRepositoryPlugin.adapter = {
 			addComment: data => {
@@ -60,6 +62,16 @@ export class CommentsIntegration extends Plugin {
 
 			getCommentThread: ( { threadId } ) => {
 				console.log( 'Get comment thread', threadId );
+
+				if ( threadId === 'ee68b31cfdb06957dd4c6aed8a4846cf7' ) {
+					return Promise.resolve( {
+						threadId: 'ee68b31cfdb06957dd4c6aed8a4846cf7',
+						comments: [ { commentId: '1', authorId: usersPlugin.me.id, createdAt: new Date( '2025-05-11' ), content: 'Test comment', attributes: {} } ],
+						resolvedAt: new Date( '2025-05-20' ),
+						resolvedBy: usersPlugin.me.id,
+						attributes:	{}
+					} );
+				}
 
 				// Write a request to your database here. The returned `Promise`
 				// should resolve with comment thread data.

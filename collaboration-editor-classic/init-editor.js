@@ -82,13 +82,14 @@ configUpdateAlert( ClassicEditor.defaultConfig, false );
 
 watchdog.create( document.querySelector( '#editor' ), {
 	revisionHistory: {
-		editorContainer: document.querySelector( '#editor-container' ),
-		viewerContainer: document.querySelector( '#editor-revision-history' ),
-		viewerEditorElement: document.querySelector( '#editor-revision-history-editor' ),
-		viewerSidebarContainer: document.querySelector( '#editor-revision-history-sidebar' ),
+		editorContainer: document.querySelector('#editor-container'),
+		viewerContainer: document.querySelector('#editor-revision-history'),
+		viewerEditorElement: document.querySelector('#editor-revision-history-editor'),
+		viewerSidebarContainer: document.querySelector('#editor-revision-history-sidebar'),
 		resumeUnsavedRevision: true
 	},
 	sidebar: {
-		container: document.querySelector( '#editor-annotations' )
-	}
-} );
+		container: document.querySelector('#editor-annotations')
+	},
+	initialData: '<p>Blah <comment-start name="ee68b31cfdb06957dd4c6aed8a4846cf7:8eaac"></comment-start>blah<comment-end name="ee68b31cfdb06957dd4c6aed8a4846cf7:8eaac"></comment-end> blah.</p>'
+});
